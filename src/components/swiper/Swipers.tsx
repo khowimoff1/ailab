@@ -1,6 +1,5 @@
-
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 // import "swiper/css";
 // import "swiper/css/pagination";
 
@@ -33,20 +32,29 @@ const slides: SlideData[] = [
 export const Swipers = () => {
   return (
     <Swiper
-      modules={[Autoplay, Pagination]}
-      slidesPerView={1}
-      spaceBetween={20}
+      modules={[Autoplay]}
       loop={true}
-      autoplay={{ delay: 3000, disableOnInteraction: false }}
-    //   pagination={{ clickable: true }}
-      className="w-full max-w-4xl"
+      speed={2000} // 3 soniyada asta o‘tadi
+      autoplay={{
+        delay: 0, // kutmasdan o'tadi
+        disableOnInteraction: false, // foydalanuvchi tegsa ham to‘xtamaydi
+      }}
+      slidesPerView={4}
+      spaceBetween={20}
+      breakpoints={{
+        320: { slidesPerView: 1 },
+        640: { slidesPerView: 2 },
+        768: { slidesPerView: 3 },
+        1024: { slidesPerView: 4 },
+      }}
+      className="w-full"
     >
       {slides.map((slide) => (
         <SwiperSlide key={slide.id}>
           <img
             src={slide.image}
             alt={`slide-${slide.id}`}
-            className="w-full h-64 object-contain mx-auto"
+            className="w-64 h-30 object-contain mx-auto"
           />
         </SwiperSlide>
       ))}

@@ -4,7 +4,7 @@ import diamondWhite from '../../assets/diamondWhite.svg'
 const About = () => {
 	const gemCards = [
 		{
-			title: 'ТОП-5 AI инструментов',
+			title: 'ТОП AI-инструментов',
 			desc: 'которые уже экономят бизнесу десятки часов',
 		},
 		{
@@ -12,8 +12,8 @@ const About = () => {
 			desc: 'внедрение AI без хаоса',
 		},
 		{
-			title: 'Реальные кейсы',
-			desc: 'компаний СНГ',
+			title: 'Разбор кейсов',
+			desc: 'на мероприятии',
 		},
 		{
 			title: 'Ответы на вопросы',
@@ -28,7 +28,7 @@ const About = () => {
 	return (
 		<section className='pt-[50px] pb-[200px] about'>
 			<div className='container'>
-				<h2 className='text-[36px] sm:text-[52px] md:text-[64px] lg:text-[72px] leading-[100%] font-bold text-white text-center'>
+				<h2 className='text-[28px] sm:text-[52px] md:text-[64px] lg:text-[72px] leading-[100%] font-bold text-white text-center'>
 					Что вы получите за{' '}
 					<span
 						style={{

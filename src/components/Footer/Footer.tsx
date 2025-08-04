@@ -6,10 +6,13 @@ import {
   FaLinkedinIn,
 } from "react-icons/fa";
 
+import logo from "../../assets/AI LAB logo2.png";
+
 const Footer = () => {
   return (
     <footer className="bg-[#0D0B21] text-white py-16 text-center">
-      <h2 className="text-3xl sm:text-4xl font-bold mb-8">AI LAB</h2>
+
+      <img src={logo} alt="AI LAB" className="w-[200px] mb-8 mx-auto" />
 
       <div className="flex justify-center gap-6 mb-8">
         <a

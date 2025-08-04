@@ -8,12 +8,11 @@ const Hero = () => {
         {/* LEFT TEXT CONTENT */}
         <div className="lg:w-1/2 flex flex-col items-start">
           <h1 className="hidden sm:block text-[36px] sm:text-[48px] md:text-[60px] lg:text-[70px] font-bold text-white leading-[100%] text-center lg:text-left">
-            мастер-класс <br /> Al-оптимизация бизнеса
+            Мастер-класс <br /> Al-оптимизация бизнеса
           </h1>
           <p className="mt-8 text-[18px] sm:text-[24px] md:text-[28px] lg:text-[32px] leading-[150%] text-white max-w-[750px] border border-white/30 rounded-[18px] p-6">
-            Вместо дорогого консалтинга за тысячи долларов вы получите готовую
-            методологию AI-внедрения, которая помогает увеличивать эффективность
-            и снижать затраты бизнеса
+            Получите готовую методологию AI-внедрения для роста эффективности и
+            сокращения затрат бизнеса
           </p>
           <a
             style={{
@@ -30,7 +29,7 @@ const Hero = () => {
         {/* RIGHT IMAGE */}
         <div className="lg:w-1/2 flex flex-col sm:justify-end">
           <h1 className="block sm:hidden text-[30px] font-bold text-white leading-[100%] text-center mb-6">
-            Практический мастер-класс
+            Мастер-класс <br /> Al-оптимизация бизнеса
           </h1>
           <img
             src={heroBg}

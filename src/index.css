@@ -2,14 +2,14 @@
 
 @font-face {
 	font-family: 'Actay Wide';
-	src: url('./assets/fonts/Actay-Regular.otf') format('opentype');
+	src: url('./assets/fonts/SFPRODISPLAYREGULAR.OTF') format('opentype');
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
   font-family: 'Actay Wide';
-  src: url('./assets/fonts/ActayWide-Bold.otf') format('opentype');
+  src: url('./assets/fonts/SFPRODISPLAYBOLD.OTF') format('opentype');
   font-weight: 700;
   font-style: normal;
 }
@@ -37,6 +37,17 @@ body {
 
 .manager {
   background-image: url('./assets/manager/managerbg.png');
+}
+.manegerbg {
+  background-repeat: no-repeat;
+  background-position: left -98px top -208px;
+  background-size: 606px;
+}
+
+.manegerimg{
+  background-repeat: no-repeat;
+  background-position: left 20px top 25px;
+      background-size: 400px;
 }
 
 @media screen and (max-width: 768px) {

@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@font-face {
+	font-family: 'Actay Wide';
+	src: url('./assets/fonts/Actay-Regular.otf') format('opentype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+  font-family: 'Actay Wide';
+  src: url('./assets/fonts/ActayWide-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Actay Wide', sans-serif;
+  background-color: #0F071E;
+}
+
+.container {
+  @apply mx-auto px-4;
+}
+
+.about {
+  background-repeat: no-repeat;
+  background-size: 150px;
+  z-index: -1000;
+  background-image: url('./assets/start-left.png'), url('./assets/start-right.png');
+  background-position: left bottom, right 100px;
+}
+
+.manager {
+  background-image: url('./assets/manager/managerbg.png');
+}
+
+@media screen and (max-width: 768px) {
+  .manager{
+    background-image: none;
+  }
+  .about{
+     background-position: left bottom, right 50px;
+      background-size: 100px;
+  }
+}

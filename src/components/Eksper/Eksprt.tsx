@@ -13,14 +13,14 @@ const Eksprt = () => {
     {
       id: 1,
       image: img1,
-      name: "Pavel Panferov",
-      role: "Founder, Business Analyst",
+      name: "Artem Panferov",
+      role: "Founder, CEO, AI Expert ",
     },
     {
       id: 2,
       image: img2,
-      name: "Artem Panferov",
-      role: "Founder, CEO, AI Expert",
+      name: "Pavel Panferov",
+      role: "Founder, Business Analyst",
     },
   ];
   return (

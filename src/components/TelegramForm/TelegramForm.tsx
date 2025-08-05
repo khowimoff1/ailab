@@ -124,7 +124,12 @@ const TelegramForm = () => {
             </div>
             <button
               type="submit"
-              className="w-full py-4 bg-gradient-to-r from-[#7086FD] to-[#80E1FB] text-white text-[22px] sm:text-[30px] font-bold rounded-lg hover:opacity-90 transition"
+               disabled={form.name.trim().length < 3 || form.phone.trim().length < 7}
+              className={`w-full py-4 text-white text-[22px] sm:text-[30px] font-bold rounded-lg transition  ${
+                form.name.trim().length < 3 || form.phone.trim().length < 7
+                  ? "opacity-50 bg-gradient-to-r from-[#7086FD] to-[#80E1FB] cursor-not-allowed"
+                  : "bg-gradient-to-r from-[#7086FD] to-[#80E1FB] hover:opacity-90"
+              }`}
             >
               {status === "sending" ? "Отправка..." : "Забронировать место"}
             </button>
@@ -140,9 +145,12 @@ const TelegramForm = () => {
             >
               &times;
             </button>
-            <h2 className="text-2xl font-semibold mb-4">Спасибо за регистрацию!</h2>
+            <h2 className="text-2xl font-semibold mb-4">
+              Спасибо за регистрацию!
+            </h2>
             <p className="text-sm text-gray-600 mb-6">
-              Присоединяйтесь к нашему закрытому Telegram-каналу, чтобы быть в курсе новостей AI и будущих мероприятий.
+              Присоединяйтесь к нашему закрытому Telegram-каналу, чтобы быть в
+              курсе новостей AI и будущих мероприятий.
             </p>
             <a
               href="https://t.me/Panferov_AI"

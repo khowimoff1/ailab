@@ -56,8 +56,10 @@ const TelegramForm = () => {
     } catch {
       setStatus("error");
     }
+  };
 
-    setTimeout(() => setStatus("idle"), 3000);
+  const handleCloseModal = () => {
+    setStatus("idle");
   };
 
   return (
@@ -127,13 +129,32 @@ const TelegramForm = () => {
               {status === "sending" ? "Отправка..." : "Забронировать место"}
             </button>
           </form>
-          {status === "success" && (
-            <p className="mt-4 text-green-500 text-center">
-              Спасибо! Ваша заявка отправлена.
-            </p>
-          )}
         </div>
       </section>
+      {status === "success" && (
+        <div className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center">
+          <div className="bg-white rounded-xl p-6 w-full max-w-md text-center relative shadow-xl">
+            <button
+              onClick={handleCloseModal}
+              className="absolute top-3 right-4 text-gray-500 hover:text-gray-700 text-2xl cursor-pointer"
+            >
+              &times;
+            </button>
+            <h2 className="text-2xl font-semibold mb-4">Спасибо за регистрацию!</h2>
+            <p className="text-sm text-gray-600 mb-6">
+              Присоединяйтесь к нашему закрытому Telegram-каналу, чтобы быть в курсе новостей AI и будущих мероприятий.
+            </p>
+            <a
+              href="https://t.me/your_channel"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition"
+            >
+              Перейти в Telegram
+            </a>
+          </div>
+        </div>
+      )}
     </>
   );
 };

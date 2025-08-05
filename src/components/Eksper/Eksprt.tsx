@@ -24,8 +24,8 @@ const Eksprt = () => {
     },
   ];
   return (
-    <section className="pb-[80px]">
-      <div className="md:text-3xl text-white pl-5 pb-8">
+    <section className="pb-[80px] container">
+      <div className="md:text-4xl text-white md:pl-5 pb-8 flex justify-center text-2xl">
         <strong>Эксперты мастер-класса</strong>
       </div>
       <div className="flex flex-wrap justify-center gap-6">

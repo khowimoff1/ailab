@@ -1,23 +1,31 @@
-import diamond from '../../assets/diamond.svg'
 import diamondWhite from '../../assets/diamondWhite.svg'
+import top from '../../assets/1.svg'
+import plan from '../../assets/2.svg'
+import razbor from '../../assets/3.svg'
+import otvet from '../../assets/4.svg'
+
 
 const About = () => {
 	const gemCards = [
 		{
 			title: 'ТОП AI-инструментов',
 			desc: 'которые уже экономят бизнесу десятки часов',
+			icon: top
 		},
 		{
 			title: 'Пошаговый план',
 			desc: 'внедрение AI без хаоса',
+			icon: plan
 		},
 		{
 			title: 'Разбор кейсов',
 			desc: 'на мероприятии',
+			icon: razbor
 		},
 		{
 			title: 'Ответы на вопросы',
 			desc: 'участников мастер-класса',
+			icon: otvet
 		},
 		{
 			title: 'Бонус:',
@@ -54,7 +62,7 @@ const About = () => {
 						>
 							<div className='bg-gradient-to-tr from-[#371F7E] to-[#9F80FB] p-3 rounded-full w-[80px] md:w-[100px] h-[80px] md:h-[100px] flex items-center justify-center mb-4 absolute top-[-50px] left-[50%] translate-x-[-50%]'>
 								<img
-									src={diamond}
+									src={card.icon}
 									alt='gem'
 									className='w-[40px] md:w-[60px] h-[40px] md:h-[60px]'
 									width={60}
@@ -81,7 +89,7 @@ const About = () => {
 					>
 						<div className='bg-gradient-to-tr from-[#371F7E] to-[#9F80FB] p-3 rounded-full  w-[80px] md:w-[100px] h-[80px] md:h-[100px] flex items-center justify-center mb-4 absolute top-[-50px] left-[50%] translate-x-[-50%]'>
 							<img
-								src={diamond}
+								src={otvet}
 								alt='gem'
 								className='w-[40px] md:w-[60px] h-[40px] md:h-[60px]'
 								width={60}

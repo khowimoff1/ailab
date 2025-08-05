@@ -145,7 +145,7 @@ const TelegramForm = () => {
               Присоединяйтесь к нашему закрытому Telegram-каналу, чтобы быть в курсе новостей AI и будущих мероприятий.
             </p>
             <a
-              href="https://t.me/your_channel"
+              href="https://t.me/Panferov_AI"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition"
